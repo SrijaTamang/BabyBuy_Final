@@ -6,10 +6,11 @@
     <item android:id="@+id/about"
         android:title="About"
         android:icon="@drawable/ic_baseline_account_box_24"/>
-    <item android:id="@+id/login"
-        android:title="Login"
+    <item android:id="@+id/sizeChart"
+        android:title="Size Chart"
+        android:icon="@drawable/ic_baseline_pie_chart_24"/>
+    <item android:id="@+id/logout"
+        android:title="Logout"
         android:icon="@drawable/ic_baseline_login_24"/>
-    <item android:id="@+id/signup"
-        android:title="Signup"
-        android:icon="@drawable/ic_baseline_lock_24"/>
+
 </menu>

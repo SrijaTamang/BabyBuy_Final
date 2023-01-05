@@ -40,7 +40,7 @@ public class Login extends AppCompatActivity {
 
         forgotPassword.setOnClickListener(this::startPasswordRecoveryProcess);
         SignupBtn.setOnClickListener(this::startSignUpActivity);
-        LoginBtn.setOnClickListener(this::byPass); // todo: change this to login
+        LoginBtn.setOnClickListener(this::login); // todo: change this to login
     }
 
     private void byPass(View view) {

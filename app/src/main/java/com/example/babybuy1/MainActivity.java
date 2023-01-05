@@ -52,21 +52,21 @@ public class MainActivity extends AppCompatActivity {
 
                 int id = item.getItemId();
                 switch (id) {
-                    case R.id.home_menu:
-                        Toast.makeText(MainActivity.this, "Clicked Home Page ", Toast.LENGTH_SHORT).show();
-                        Intent homeintent = new Intent(getApplicationContext(), MainActivity.class);
+                    case R.id.sizeChart:
+                        Toast.makeText(MainActivity.this, "Size Chart Loaded", Toast.LENGTH_SHORT).show();
+                        Intent homeintent = new Intent(getApplicationContext(), Chart.class);
                         startActivity(homeintent);
                         break;
 
-                    case R.id.about_menu:
+                    case R.id.about:
                         Toast.makeText(MainActivity.this, "Clicked About Page ", Toast.LENGTH_SHORT).show();
                         Intent aboutintent = new Intent(getApplicationContext(), Login.class);
                         startActivity(aboutintent);
                         break;
 
-                    case R.id.contact_menu:
-                        Toast.makeText(MainActivity.this, "Clicked contact  Page ", Toast.LENGTH_SHORT).show();
-                        Intent conintent = new Intent(getApplicationContext(), Login .class);
+                    case R.id.logout:
+                        Toast.makeText(MainActivity.this, "User Logged Oute ", Toast.LENGTH_SHORT).show();
+                        Intent conintent = new Intent(getApplicationContext(), Login.class);
                         startActivity(conintent);
                         break;
 
