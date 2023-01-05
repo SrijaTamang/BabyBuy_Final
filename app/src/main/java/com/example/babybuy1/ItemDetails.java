@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -92,12 +93,14 @@ public class ItemDetails extends AppCompatActivity {
         return item;
     }
 
+   // String Message=item.getName() + item.getPrice().toString() + item.getDescription();
     private void startShareItemActivity(View view) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "");
-        intent.putExtra(Intent.EXTRA_TEXT, "Check ypur cool Application ");
-        startActivity(Intent.createChooser(intent, "Share via"));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Please check this product");
+        intent.putExtra(Intent.EXTRA_TEXT, "Product Name: "+item.getName() + "\n"+"Price: "+item.getPrice() + "\n"+ "Description: "+item.getDescription());
+
+        startActivity(Intent.createChooser(intent, "K bata Share Garxas??? Xito Van"));
     }
 
 
